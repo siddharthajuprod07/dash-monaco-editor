@@ -5,9 +5,11 @@ app = Dash(__name__)
 
 app.layout = html.Div([
     dash_monaco_editor.DashMonacoEditor(
-        id='input',
-        value='my-value',
-        label='my-label'
+        id="input",
+        height='90vh',
+        language='python',
+        value='##some comment',
+        theme="vs-dark"
     ),
     html.Div(id='output')
 ])

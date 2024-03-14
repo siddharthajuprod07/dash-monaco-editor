@@ -13,11 +13,13 @@ It renders an input with the property `value`
 which is editable by the user.
 Keyword arguments:
 - `id` (String; optional): The ID used to identify this component in Dash callbacks.
-- `label` (String; required): A label that will be printed when this component is rendered.
-- `value` (String; optional): The value displayed in the input.
+- `height` (String; optional): Height of the editor
+- `language` (String; required): The language of the editor
+- `theme` (String; required): current theme "light","vs-dark"
+- `value` (String; optional): current code
 """
 function dashmonacoeditor(; kwargs...)
-        available_props = Symbol[:id, :label, :value]
+        available_props = Symbol[:id, :height, :language, :theme, :value]
         wild_props = Symbol[]
         return Component("dashmonacoeditor", "DashMonacoEditor", "dash_monaco_editor", available_props, wild_props; kwargs...)
 end

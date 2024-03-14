@@ -10,11 +10,11 @@ import Editor from '@monaco-editor/react';
  * which is editable by the user.
  */
 const DashMonacoEditor = (props) => {
-    const {id, label, setProps, value} = props;
+    const {height, language, setProps, value,theme} = props;
 
     return (
-        <div id={id}>
-            <Editor height="90vh" defaultLanguage="python" defaultValue="## some comment" />;
+        <div>
+            <Editor height={height} language={language} value={value} theme={theme}/>;
         </div>
     );
 }
@@ -28,20 +28,28 @@ DashMonacoEditor.propTypes = {
     id: PropTypes.string,
 
     /**
-     * A label that will be printed when this component is rendered.
+     * Height of the editor
      */
-    label: PropTypes.string.isRequired,
+    height: PropTypes.string,
 
     /**
-     * The value displayed in the input.
+     * The language of the editor
      */
-    value: PropTypes.string,
+    language: PropTypes.string.isRequired,
 
     /**
      * Dash-assigned callback that should be called to report property changes
      * to Dash, to make them available for callbacks.
      */
-    setProps: PropTypes.func
+    setProps: PropTypes.func,
+    /**
+     * current code
+     */
+    value: PropTypes.string,
+    /**
+     * current theme "light","vs-dark"
+     */
+    theme: PropTypes.string.isRequired,
 };
 
 export default DashMonacoEditor;

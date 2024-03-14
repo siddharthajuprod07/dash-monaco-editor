@@ -1,9 +1,9 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
 #' @export
-dashMonacoEditor <- function(id=NULL, label=NULL, value=NULL) {
+dashMonacoEditor <- function(id=NULL, height=NULL, language=NULL, theme=NULL, value=NULL) {
     
-    props <- list(id=id, label=label, value=value)
+    props <- list(id=id, height=height, language=language, theme=theme, value=value)
     if (length(props) > 0) {
         props <- props[!vapply(props, is.null, logical(1))]
     }
@@ -11,7 +11,7 @@ dashMonacoEditor <- function(id=NULL, label=NULL, value=NULL) {
         props = props,
         type = 'DashMonacoEditor',
         namespace = 'dash_monaco_editor',
-        propNames = c('id', 'label', 'value'),
+        propNames = c('id', 'height', 'language', 'theme', 'value'),
         package = 'dashMonacoEditor'
         )
 
