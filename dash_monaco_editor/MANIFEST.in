@@ -1,0 +1,11 @@
+include dash_monaco_editor/dash_monaco_editor.min.js
+include dash_monaco_editor/dash_monaco_editor.min.js.map
+include dash_monaco_editor/async-*.js
+include dash_monaco_editor/async-*.js.map
+include dash_monaco_editor/*-shared.js
+include dash_monaco_editor/*-shared.js.map
+include dash_monaco_editor/metadata.json
+include dash_monaco_editor/package-info.json
+include README.md
+include LICENSE
+include package.json
