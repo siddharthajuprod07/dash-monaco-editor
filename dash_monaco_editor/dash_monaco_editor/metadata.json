@@ -1,6 +1,6 @@
 {
   "src/lib/components/DashMonacoEditor.react.js": {
-    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "description": "",
     "displayName": "DashMonacoEditor",
     "methods": [],
     "props": {

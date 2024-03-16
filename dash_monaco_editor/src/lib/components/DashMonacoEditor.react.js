@@ -2,19 +2,20 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Editor from '@monaco-editor/react';
 
-/**
- * ExampleComponent is an example component.
- * It takes a property, `label`, and
- * displays it.
- * It renders an input with the property `value`
- * which is editable by the user.
- */
+
 const DashMonacoEditor = (props) => {
+    
     const {height, language, setProps, value,theme} = props;
+
+    const setval = (currentval) => {
+        setProps({
+            value: currentval,
+        });
+    };
 
     return (
         <div>
-            <Editor height={height} language={language} value={value} theme={theme}/>;
+            <Editor height={height} language={language} value={value} theme={theme} onChange={setval}/>
         </div>
     );
 }

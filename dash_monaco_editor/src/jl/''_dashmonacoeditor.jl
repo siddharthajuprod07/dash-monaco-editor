@@ -6,11 +6,7 @@ export ''_dashmonacoeditor
     ''_dashmonacoeditor(;kwargs...)
 
 A DashMonacoEditor component.
-ExampleComponent is an example component.
-It takes a property, `label`, and
-displays it.
-It renders an input with the property `value`
-which is editable by the user.
+
 Keyword arguments:
 - `id` (String; optional): The ID used to identify this component in Dash callbacks.
 - `height` (String; optional): Height of the editor

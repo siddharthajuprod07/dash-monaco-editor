@@ -1,6 +1,6 @@
 {
   "name": "dash_monaco_editor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Plotly dash Monaco Editor Component",
   "main": "build/index.js",
   "scripts": {
